@@ -45,12 +45,9 @@
       align-items: center;
       padding: 15px 0;
     }
-    .logo {
-      font-size: 1.8rem;
-      font-weight: 800;
-      color: var(--primary);
-      text-decoration: none;
-      font-family: 'Poppins', sans-serif;
+    .logo img {
+      height: 40px;
+      display: block;
     }
     .nav-links {
       display: flex;
@@ -218,10 +215,12 @@
 </head>
 <body>
 
-  <!-- HEADER CON MENU -->
+  <!-- HEADER CON MENU E LOGO PNG -->
   <header>
     <div class="container navbar">
-      <a href="#home" class="logo">REPUTA</a>
+      <a href="#home" class="logo">
+        <img src="logo.png" alt="Reputa - Logo">
+      </a>
       <div class="nav-links">
         <a href="#servizi">Servizi</a>
         <a href="#come-funziona">Come Funziona</a>
@@ -293,11 +292,11 @@
       <h2>Non sei il tuo passato. Riprenditi il tuo presente.</h2>
       <div class="contact-info">
         📧 <a href="mailto:info@reputa.it">info@reputa.it</a><br>
-        📞 +39 320 669 5276
+        📞 +39 320 66.95.276
       </div>
       <p>Richiedi subito la tua analisi gratuita – senza impegno.</p>
       
-      <form action="https://formspree.io/f/XXXXXX" method="POST">
+      <form action="https://formspree.io/f/mnngvvqv" method="POST">
         <input type="text" name="nome" placeholder="Il tuo nome" required>
         <input type="email" name="email" placeholder="La tua email" required>
         <textarea name="messaggio" placeholder="Descrivi la tua situazione: link da rimuovere, contesto, urgenza..." rows="5" required></textarea>
@@ -313,7 +312,7 @@
     Non garantiamo la rimozione di contenuti veritieri di rilevante interesse pubblico.</p>
   </footer>
 
-  <!-- Smooth scroll per i link di navigazione -->
+  <!-- Smooth scroll -->
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
