@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Reputa: servizio legale di rimozione contenuti lesivi online. Audit gratuito. Paghi solo se riusciamo.">
   <title>Reputa – Il diritto all’oblio, fatto bene</title>
   <style>
     body {
@@ -61,9 +62,14 @@
       margin-top: 0;
       color: #0A2540;
     }
-    .contact {
+    .contact-info {
       text-align: center;
       font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+    .contact-info a {
+      color: #0A2540;
+      text-decoration: underline;
     }
     footer {
       text-align: center;
@@ -72,6 +78,35 @@
       border-top: 1px solid #eee;
       font-size: 0.9rem;
       color: #666;
+    }
+    form {
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin: 0 auto;
+    }
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #4ECDC4;
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #3da9a0;
     }
     @media (min-width: 600px) {
       .benefits {
@@ -102,15 +137,26 @@
 
     <div class="cta">
       <h2>Non sei il tuo passato. Riprenditi il tuo presente.</h2>
-      <div class="contact">
-        📧 info@reputa.it<br>
-        🌐 <a href="https://reputa.github.io" style="color:#0A2540; text-decoration:underline;">reputa.github.io</a>
+      <div class="contact-info">
+        📧 <a href="mailto:info@reputa.it">info@reputa.it</a><br>
+        🌐 <a href="https://reputa.github.io" target="_blank">reputa.github.io</a>
       </div>
+    </div>
+
+    <!-- SEZIONE CONTATTI -->
+    <div class="section" id="contatti">
+      <h2 style="text-align:center; margin-bottom:25px;">Richiedi la tua analisi gratuita</h2>
+      <form action="https://formspree.io/f/mnngvvqv" method="POST">
+        <input type="text" name="nome" placeholder="Il tuo nome" required>
+        <input type="email" name="email" placeholder="La tua email" required>
+        <textarea name="messaggio" placeholder="Descrivi la tua situazione: link da rimuovere, contesto, urgenza..." rows="5" required></textarea>
+        <button type="submit">Invia la richiesta</button>
+      </form>
     </div>
 
     <footer>
       Reputa – Gestione legale della reputazione online.<br>
-      Ogni intervento è valutato caso per caso nel rispetto della legge.
+      Ogni intervento è valutato caso per caso nel rispetto della legge e dell’interesse pubblico.
     </footer>
   </div>
 </body>
