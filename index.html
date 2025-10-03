@@ -341,6 +341,15 @@
       });
     });
   </script>
+  <script>
+  document.querySelector('form').addEventListener('submit', function() {
+    gtag('event', 'conversion', {
+      'send_to': 'G-LQ6JKMNHBC',
+      'event_category': 'Contatto',
+      'event_label': 'Richiesta audit'
+    });
+  });
+</script>
 
 </body>
 </html>
